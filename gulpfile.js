@@ -14,6 +14,8 @@ const newer = require('gulp-newer');
 const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const include = require('gulp-include');
+const ghPages = require('gulp-gh-pages');
+
 
 function pages() {
   return src('app/pages/*.html')
@@ -97,6 +99,11 @@ function cleanDist() {
   return src('dist')
     .pipe(clean())
 }
+
+gulp.task('deploy', function() {
+  return gulp.src('dist/**/*')
+      .pipe(ghPages());
+});
 
 function building() {
   return src([
