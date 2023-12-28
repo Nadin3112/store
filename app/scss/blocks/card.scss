@@ -1,0 +1,159 @@
+.card {
+  @media (min-width: $medium-width) {
+    display: flex;
+    gap: 55px;
+    padding-top: 20px;
+  }
+}
+
+.card__carousel {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 510px;
+  }
+}
+
+.card__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 5px;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    gap: 15px;
+    max-width: 510px;
+  }
+}
+
+.card__picture {
+  &--carusel {
+    display: block;
+    width: 66px;
+    height: 80px;
+
+    @media (min-width: $desktop-width) {
+      width: 90px;
+      height: 100px;
+    }
+  }
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__slider {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 20px);
+  transform: translateY(-50%);
+
+  @media (min-width: $desktop-width) {
+    left: -12px;
+    right: -12px;
+  }
+}
+
+.card__button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../images//sprite.svg#arrow-carousel");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.card__wrapper {
+  padding-top: 22px;
+  width: auto;
+
+  @media (min-width: $medium-width) {
+    padding-top: 0;
+  }
+}
+
+.card__number {
+  margin: 0;
+  margin-bottom: 2px;
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  line-height: 140%;
+  color: $color-filter;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    font-size: 12px;
+  }
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "PermianSerifTypeface", "Times New Roman", serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: $color-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.card__description {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 1px;
+    background-color: $color-decoration;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 1px;
+    background-color: $color-decoration;
+    content: "";
+  }
+}

@@ -1,0 +1,41 @@
+.contacts-map {
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 40px;
+  }
+}
+
+.contacts-maps__title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+}
+
+.contacts-map__contacts {
+  margin-bottom: 20px;
+
+  @media (min-width: $medium-width) {
+    margin: 0;
+  }
+}
+
+.contacts-map__map {
+  margin-bottom: 20px;
+
+  @media (min-width: $medium-width) {
+    margin: 0;
+  }
+}
+
+.contacts-map__message {
+  @media (min-width: $medium-width) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}

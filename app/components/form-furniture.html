@@ -1,0 +1,80 @@
+<form class="form" action="" method="get">
+  <fieldset class="form__group">
+    <h3 class="form__title">Ценовой диапазон</h3>
+    <div class="form__range range">
+      <div class="range__wrapper">
+        <label class="range__label">
+          <span class="range__text">от</span>
+          <input class="range__input" type="number" name="min-price" value="2200">
+        </label>
+        <label class="range__label">
+          <span class="range__text">до</span>
+          <input class="range__input" type="number" name="max-price" value="147500">
+        </label>
+      </div>
+      <div class="range__scale">
+        <div class="range__bar">
+          <button class="range__toggle range__toggle--min" type="button">
+            <span class="visually-hidden">Изменить минимальную цену.</span>
+          </button>
+          <button class="range__toggle range__toggle--max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену.</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Тип мебели</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type" checked>
+        Диваны и кресла
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type">
+        Кровати и матрасы
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type" checked>
+        Шкафы и стеллажи
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type">
+        Комоды и тумбы
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type" checked>
+        Столы и стулья
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type" checked>
+        Ковры и текстиль
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type" checked>
+        Освещение
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Стиль</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="style" checked>
+        Скандинавский
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="style" checked>
+        Винтаж
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="style">
+        Современный
+      </label>
+    </div>
+  </fieldset>
+  <div class="form__wrapper-button">
+    <button class="form__button" type="reset">Сбросить фильтры</button>
+  </div>
+</form>

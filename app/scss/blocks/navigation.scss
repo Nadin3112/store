@@ -1,0 +1,214 @@
+.navigation__tel {
+  position: absolute;
+  right: 75px;
+  top: 23px;
+  width: 24px;
+  height: 24px;
+  background-color: $color-main;
+  background-image: url("../images/sprite.svg#phone");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+
+  @media (min-width: $tablet-width) {
+    right: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.navigation__toggle {
+  position: absolute;
+  width: 48px;
+  height: 10px;
+  top: 30px;
+  right: 0;
+  background-color: $color-main;
+  z-index: 30;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff;
+}
+
+.navigation--closed .navigation__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 6px 0 0 fade(#ffffff, 30%),
+    0 12px 0 0 fade(#ffffff, 30%);
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__wrapper {
+    display: none;
+  }
+
+  .navigation--opened .navigation__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 45px;
+    background-color: $color-main;
+    background-image: url("../images/back/header-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+  }
+
+  .navigation--opened .navigation__contacts {
+    margin-bottom: 45px;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 18px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.navigation__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin: 0;
+  margin-bottom: 96px;
+  padding: 0;
+  padding-top: 140px;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 16px;
+    margin-right: 90px;
+  }
+}
+.navigation__link {
+  display: block;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: $color-background;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    color: $color-address;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+.navigation__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 405px;
+  }
+}
+
+.navigation__address {
+  display: block;
+  font-style: normal;
+  line-height: 120%;
+  text-decoration: none;
+  color: $color-address;
+
+  &--mail {
+    font-size: 16px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 50px;
+    }
+  }
+
+  &--tel {
+    font-family: "PermianSerifTypeface", "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    order: -1;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      order: 1;
+    }
+  }
+
+  &:hover {
+    color: $color-background;
+  }
+}

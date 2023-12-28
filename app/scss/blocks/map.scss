@@ -1,0 +1,17 @@
+.map {
+  padding: 0;
+  background-color: $color-main;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  min-height: 350px;
+  height: 100%;
+  border: none;
+}
+
+.map__image {
+  display: block;
+  object-fit: contain;
+}

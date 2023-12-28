@@ -1,0 +1,18 @@
+.articles__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $medium-width) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.articles__all {
+  margin-top: 20px;
+}

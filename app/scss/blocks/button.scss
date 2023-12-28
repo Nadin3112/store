@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 10px;
+  color: $color-background;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: $color-button;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-link;
+  }
+
+  &:disabled {
+    background-color: rgba(169, 132, 92, 0.5);
+  }
+}

@@ -1,0 +1,98 @@
+<!--=include header.html -->
+<main class="main-index">
+  <h1 class="visually-hidden">Магазин по продаже изделий из дерева</h1>
+  <section class="hero">
+    <div class="hero__container main-slider">
+      <div class="main-slider__list">
+        <div class="main-slider__wrapper">
+          <h2 class="main-slider__title">Classic Wood Stile</h2>
+          <p class="main-slider__text">enterior-exterior</p>
+          <p class="main-slider__description">Приглашает к сотрудничеству архитекторов, дизайнеров и строителей</p>
+          <a class="main-slider__link button" href="#">подробнее</a>
+          <p class="main-slider__number">2-6</p>
+        </div>
+        <div class="main-slider__arrow">
+          <button class="main-slider__arrow-button main-slider__arrow-button--prev">
+            <span class="visually-hidden">Переключить на предыдущий слайд</span>
+          </button>
+          <button class="main-slider__arrow-button main-slider__arrow-button--next">
+            <span class="visually-hidden">Переключить на следующий слайд</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="about">
+      <h2 class="visually-hidden">О нас</h2>
+      <ul class="about__list">
+        <li class="about__item">
+          <picture>
+            <source type="image/avif" media="(min-width: 1600px)"
+              srcset="images/content/doors-desktop@1x.avif 1x, doors-desktop@2x.avif 2x">
+            <source type="image/avif" srcset="images/content/doors-mobile@1x.avif 1x, doors-mobile@2x.avif 2x">
+            <source type="image/webp" media="(min-width: 1600px)"
+              srcset="images/content/doors-desktop@1x.webp 1x, doors-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="images/content/doors-mobile@1x.webp 1x, doors-mobile@2x.webp 2x">
+            <source media="(min-width: 1600px)"
+              srcset="images/content/doors-desktop@1x.png 1x, doors-desktop@2x.png 2x">
+            <img class="about__image" src="images/content/doors-mobile@1x.png"
+              srcset="images/content/doors-mobile@2x.png 2x" alt="Двери в интеьере" width="350" height="180">
+          </picture>
+          <h3 class="about__title">Двери на заказ</h3>
+          <p class="about__description">На собственной фабрике мы создаем красивые, безопасные и практически вечные
+            двери,
+            межкомнатные перегородки, стеновые панели и другие решения для вашего интерьера.</p>
+          <a href="#" class="about__link">заказать уникальную дверь</a>
+        </li>
+        <li class="about__item">
+          <picture>
+            <source type="image/avif" media="(min-width: 1600px)"
+              srcset="images/content/milling-desktop@1x.avif 1x, milling-desktop@2x.avif 2x">
+            <source type="image/avif" srcset="images/content/milling-mobile@1x.avif 1x, milling-mobile@2x.avif 2x">
+            <source type="image/webp" media="(min-width: 1600px)"
+              srcset="images/content/milling-desktop@1x.webp 1x, milling-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="images/content/milling-mobile@1x.webp 1x, milling-mobile@2x.webp 2x">
+            <source media="(min-width: 1600px)"
+              srcset="images/content/milling-desktop@1x.png 1x, milling-desktop@2x.png 2x">
+            <img class="about__image" src="images/content/milling-mobile@1x.png"
+              srcset="images/content/milling-mobile@2x.png 2x" alt="Фрезеровка по дереву" width="350" height="180">
+          </picture>
+          <h3 class="about__title">3D фрезеровка</h3>
+          <p class="about__description">Изделия, которые создает фрезерный станок, управляемый компьютером, отличаются
+            высочайшим качеством, абсолютной детализацией и идеальной точностью.</p>
+          <a href="#" class="about__link">выбрать из каталога</a>
+        </li>
+      </ul>
+    </section>
+    <section class="showcase">
+      <h2 class="showcase__title title">Витрина товаров</h2>
+      <ul class="showcase__list">
+        <li class="showcase__item">
+          <a class="showcase__link showcase__link--active" href="#">Межкомнатные двери</a>
+        </li>
+        <li class="showcase__item">
+          <a class="showcase__link" href="#">Мебель</a>
+        </li>
+        <li class="showcase__item">
+          <a class="showcase__link" href="#">Стеновые панели «Буазери»</a>
+        </li>
+        <li class="showcase__item">
+          <a class="showcase__link" href="#">Лестницы</a>
+        </li>
+        <li class="showcase__item">
+          <a class="showcase__link" href="#">Мебельные фасады</a>
+        </li>
+      </ul>
+      <!--=include doors.html -->
+      <a class="showcase__all all" href="">показать все</a>
+    </section>
+    <!--=include help.html -->
+    <section class="new-articles">
+      <h2 class="new-articles__title">Новые статьи</h2>
+      <!--=include article.html -->
+      <a class="new-articles__all all" href="">Все статьи</a>
+    </section>
+  </div>
+</main>
+<!--=include footer.html -->

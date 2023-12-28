@@ -1,0 +1,1 @@
+let filter=document.querySelector(".filter"),filterToggle=document.querySelector(".filter__toggle");filterToggle.addEventListener("click",(function(){filter.classList.contains("filter--closed")?(filter.classList.remove("filter--closed"),filter.classList.add("filter--opened")):(filter.classList.add("filter--closed"),filter.classList.remove("filter--opened"))}));

@@ -1,0 +1,29 @@
+.description {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+  padding: 50px 0;
+  }
+}
+
+.description__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "PermianSerifTypeface", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: $color-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+  }
+}
+
+.description__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: $color-main;
+}

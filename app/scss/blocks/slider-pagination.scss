@@ -1,0 +1,29 @@
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.slider-pagination__button {
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: $color-decoration;
+  border: none;
+  border-radius: 50%;
+
+  &:hover {
+    width: 10px;
+    height: 10px;
+    background-color: $color-hover;
+  }
+
+  &--current {
+    width: 10px;
+    height: 10px;
+    background-color: $color-main;
+  }
+}

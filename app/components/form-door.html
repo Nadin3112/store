@@ -1,0 +1,164 @@
+<form class="form" action="" method="get">
+  <fieldset class="form__group">
+    <h3 class="form__title">Ценовой диапазон</h3>
+    <div class="form__range range">
+      <div class="range__wrapper">
+        <label class="range__label">
+          <span class="range__text">от</span>
+          <input class="range__input" type="number" name="min-price" value="2200">
+        </label>
+        <label class="range__label">
+          <span class="range__text">до</span>
+          <input class="range__input" type="number" name="max-price" value="147500">
+        </label>
+      </div>
+      <div class="range__scale">
+        <div class="range__bar">
+          <button class="range__toggle range__toggle--min" type="button">
+            <span class="visually-hidden">Изменить минимальную цену.</span>
+          </button>
+          <button class="range__toggle range__toggle--max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену.</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Тип дверей</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type" checked>
+        Межкомнатные
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="type">
+        Скрытые
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Стиль</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="style" checked>
+        Скандинавский
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="style" checked>
+        Винтаж
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="style">
+        Современный
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Материал</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="material" checked>
+        Эмаль
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="material" checked>
+        Монохромный Кортекс
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="material" checked>
+        Шёлк
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="material" checked>
+        Шпон
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="material" checked>
+        Кортекс
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Покрытие</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="coating">
+        Матовые
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="coating" checked>
+        Глянцевые
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="coating" checked>
+        Под покраску
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Тип конструкции</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction" checked>
+        Рамочные
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction" checked>
+        Филёнчатые
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction" checked>
+        Щитовые
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction" checked>
+        Остеклённые
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction">
+        Глухие
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction" checked>
+        Арочные
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction">
+        Противовзломные
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction">
+        Радиусные
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="construction">
+        Автоматические
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__group">
+    <h3 class="form__title">Облицовки</h3>
+    <div class="form__wrapper">
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="facings" checked>
+        Ваниль
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="facings" checked>
+        Белый Клен
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="facings" checked>
+        Тополь
+      </label>
+      <label class="form__label">
+        <input class="form__input" type="checkbox" name="facings" checked>
+        Белый матовый
+      </label>
+    </div>
+  </fieldset>
+  <div class="form__wrapper-button">
+    <button class="form__button" type="reset">Сбросить фильтры</button>
+  </div>
+</form>

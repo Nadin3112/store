@@ -1,0 +1,172 @@
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  background-color: $color-range-bg;
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px;
+  }
+}
+
+.modal__application {
+  padding: 0;
+}
+
+.modal__close {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  background-color: $color-range-bg;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $medium-width) {
+    top: -20px;
+    right: -70px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 14px;
+    height: 2px;
+    background-color: $color-main;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: "PermianSerifTypeface", "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+  }
+}
+
+.modal__order {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+  padding: 10px 20px 10px 10px;
+  background-color: $color-address;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
+}
+
+.modal__description {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+
+  &--name {
+    width: 140px;
+
+    @media (min-width: $tablet-width) {
+      width: 180px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-right: 0;
+  }
+}
+
+.modal__wrapper-application {
+  text-align: center;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+  }
+
+  &--application {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto 30px;
+  }
+}
+
+.modal__input {
+  width: 100%;
+  padding: 16px 18px 17px;
+  margin-bottom: 10px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: $color-main;
+  background-color: $color-background;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding: 20px 23px 22px;
+  }
+}
+
+.modal__button {
+  width: 100%;
+  padding: 15px 36px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.modal__image-application {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}

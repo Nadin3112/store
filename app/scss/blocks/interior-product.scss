@@ -1,0 +1,26 @@
+.interior-product__title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+}
+
+.interior-product__filter {
+  margin-bottom: 10px;
+}
+
+.interior-product__container {
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
+}

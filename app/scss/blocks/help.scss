@@ -1,0 +1,125 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-bottom: 25px;
+  background-color: $color-range-bg;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+}
+
+.help__image {
+  display: block;
+  margin-bottom: 35px;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.help__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 70px;
+  }
+}
+
+.help__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "PermianSerifTypeface", "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 62px;
+    margin-bottom: 30px;
+  }
+}
+
+.help__description {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+}
+
+.help__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.help__wrapper {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.help__input {
+  width: 100%;
+  padding: 16px 18px 17px;
+  margin-bottom: 10px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: $color-main;
+  background-color: $color-background;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 20px 23px 22px;
+  }
+}
+
+.help__button {
+  min-height: 50px;
+  max-width: 320px;
+  margin-top: 5px;
+  padding: 15px 36px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 60px;
+  }
+}

@@ -1,0 +1,85 @@
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: -9px;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  &--vkontakte {
+    z-index: 4;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 22px;
+      height: 22px;
+      margin: auto;
+      background: url("../images/sprite.svg#vkontakte") no-repeat center;
+      content: "";
+    }
+  }
+
+  &--vkontakte-footer::before {
+    background: url("../images/sprite.svg#vkontakte-footer") no-repeat center;
+  }
+
+
+
+  &--pinterest {
+    z-index: 3;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 22px;
+      height: 22px;
+      background: url("../images/sprite.svg#pinterest") no-repeat center;
+      content: "";
+    }
+  }
+
+  &--pinterest-footer::before {
+    background: url("../images/sprite.svg#pinterest-footer") no-repeat center;
+  }
+
+  &--telegram::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 28px;
+    background: url("../images/sprite.svg#telegram") no-repeat center;
+    content: "";
+  }
+
+  &--telegram-footer::before {
+    background: url("../images/sprite.svg#telegram-footer") no-repeat center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,231 @@
+.form-door__group {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+}
+
+.form-door__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+}
+
+.form-door__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 7px;
+  }
+}
+
+.form-door__input {
+  position: relative;
+  display: block;
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-door__picture {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.form-door__input:checked+.form-door__picture::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  border: 2px solid $color-main;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.form-door__image {
+  display: block;
+  width: 100%;
+
+  &:active {
+    border-radius: 40px;
+    border: 5px solid $color-background;
+  }
+}
+
+.form-door__label-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 0 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.06em;
+  border: 1px solid $color-decoration;
+  background-color: $color-background;
+
+  @media (min-width: $tablet-width) {
+    min-height: 60px;
+  }
+}
+
+.form-door__input:checked+.form-door__label-box::before {
+  position: absolute;
+  content: "";
+  border: 2px solid $color-main;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 60px;
+  }
+}
+
+.form-door__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.form-door__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.form-door__price-reduction {
+  margin-right: 20px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 100%;
+  color: $color-main;
+}
+
+.form-door__price-old {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: $color-link;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid $color-link;
+    transform: rotate(-7deg);
+  }
+}
+
+.form-door__quantity {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  border: 1px solid $color-decoration;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.form-door__quantity-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 24px 16px 24px 20px;
+  background-color: $color-background;
+  border: transparent;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 14px;
+    height: 2px;
+    background-color: $color-main;
+    content: "";
+  }
+
+  &--plus::after {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 14px;
+    height: 2px;
+    background-color: $color-main;
+    content: "";
+    transform: rotate(-90deg);
+  }
+}
+
+.form-door__quantity-button:hover::before,
+.form-door__quantity-button--plus:hover::after {
+  background-color: $color-link;
+}
+
+
+.form-door__quantity-input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 11px 10px 10px;
+  text-align: center;
+  font-family: "PermianSerifTypeface", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: $color-main;
+  background-color: $color-background;
+  border: transparent;
+  appearance: textfield;
+}
+
+.form-door__quantity-input::-webkit-outer-spin-button,
+.form-door__quantity-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form-door__button-submit {
+  width: 190px;
+  min-height: 50px;
+  font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
+}

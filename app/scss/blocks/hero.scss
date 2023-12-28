@@ -1,0 +1,42 @@
+.hero {
+  width: auto;
+  padding: 5px 5px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 20px 0;
+  }
+}
+
+.hero__container {
+  position: relative;
+  display: block;
+  min-height: 470px;
+  padding: 70px 25px;
+  margin: 0 auto;
+  background-color: $color-main;
+  background-image: url("../images/back/back-hero-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/back/back-hero-mobile@2x.png");
+    background-size: 760px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    min-height: 700px;
+    background-image: url("../images/back/back-hero-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/back/back-hero-desktop@2x.png");
+      background-size: 3120px auto;
+    }
+  }
+}

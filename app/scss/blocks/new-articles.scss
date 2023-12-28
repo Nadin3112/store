@@ -1,0 +1,47 @@
+.new-articles {
+  width: auto;
+  padding: 60px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 100px 0 0;
+  }
+}
+
+.new-articles__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "PermianSerifTypeface", "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    margin-bottom:30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+}
+
+.new-articles__all {
+  margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    margin-top: 0;
+    min-width: 400px;
+    padding-left: 20px;
+  }
+}

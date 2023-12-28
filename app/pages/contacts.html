@@ -1,0 +1,109 @@
+<!--=include header.html -->
+<main class="main-inner">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--index" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--current">Контакты</a>
+        </li>
+      </ol>
+    </div>
+    <div class="contacts-map">
+      <div class="contacts-map__container">
+        <h1 class="contacts-maps__title title">Контакты</h1>
+        <section class="contacts-map__contacts contacts">
+          <h1 class="visually-hidden">Контактная информация</h1>
+          <div class="contacts__wrapper">
+            <p class="contacts__text">Адрес:</p>
+            <adress class="contacts__address">
+              <p class="contacts__description">м. Полежаевская</p>
+              <p class="contacts__description">123154, г. Москва, пр-т. Маршала Жукова, д. 52, "Мебельный
+                Центр"</p>
+            </adress>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__text">Режим работы:</p>
+            <adress class="contacts__time">
+              <span class="contacts__description">ВТ - СБ 10:00 - 19:00<br> ВС, ПН - Выходные</span>
+            </adress>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__text">Телефон</p>
+            <adress class="contacts__tel">
+              <a class="contacts__link" href="tel:+88005508179">8 (800) 550-81-79</a>
+            </adress>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__text">Почта и социальные сети</p>
+            <adress class="contacts__mail">
+              <a class="contacts__link" href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
+            </adress>
+          </div>
+          <ul class="contacts__social social">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="#">
+                <span class="visually-hidden">Мы в Пинтерест.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#">
+                <span class="visually-hidden">Мы в Телеграм.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="contacts-map__map map">
+        <h2 class="visually-hidden">Интерактивная карта</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.838838867998!2d37.459612094905566!3d55.77867082062843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5499edf40243d%3A0x7faa7a27f1123ea!2z0L_RgNC-0YHQvy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA1Miwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMzE1NA!5e0!3m2!1sru!2sby!4v1691065224107!5m2!1sru!2sby"
+          width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <noscript>
+          <picture>
+            <source type="image/avif" media="(min-width: 1600px)"
+              srcset="images/map/map-desktop@1x.avif 1x, map-desktop@2x.avif 2x">
+            <source type="image/avif" srcset="images/map/map-mobile@1x.avif 1x, map-mobile@2x.avif 2x">
+            <source type="image/webp" media="(min-width: 1600px)"
+              srcset="images/map/map-desktop@1x.webp 1x, map-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, map-mobile@2x.webp 2x">
+            <source media="(min-width: 1600px)" srcset="images/map/map-desktop@1x.png 1x, map-desktop@2x.png 2x">
+            <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x"
+              alt="Интерактивная карта" width="350" height="350">
+          </picture>
+        </noscript>
+      </section>
+      <section class="contacts-map__message message">
+        <div class="message__text">
+          <h2 class="message__title title">Связаться с нами</h2>
+          <p class="message__description">Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!</p>
+        </div>
+        <form class="message__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="message__wrapper">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input class="message__input" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+            <label class="visually-hidden" for="tel">Ваш телефон</label>
+            <input class="message__input" type="tel" name="tel" id="tel" placeholder="Ваш телефон" required>
+            <label for="visually-hidden">Ваш комментарий</label>
+            <textarea class="message__comment" id="comment" name="comment" cols="30" rows="6"
+              placeholder="Ваш комментарий">Ваш комментарий</textarea>
+          </div>
+          <button class="message__button button" type="submit">отправить сообщение</button>
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+
+
+
+
+<!--=include footer.html -->

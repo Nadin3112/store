@@ -1,0 +1,74 @@
+<!--=include header.html -->
+<main class="main-inner">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--index" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--current">Мебель</a>
+        </li>
+      </ol>
+    </div>
+    <section class="interior-product">
+      <h1 class="interior-product__title title">Мебель</h1>
+      <div class="interior-product__container">
+        <div class="interior-product__filter filter filter--closed">
+          <div class="filter__wrapper">
+            <select class="filter__select" aria-label="Сортировка">
+              <option value="furniture">Мебель</option>
+              <option value="doors">Межкомнатные двери</option>
+              <option value="panels">Стеновые панели «Буазери»</option>
+              <option value="stairs">Лестницы</option>
+              <option value="facades">Мебельные фасады</option>
+            </select>
+          </div>
+          <button class="filter__toggle" type="button">
+            <span class="visually-hidden">Открыть фильтр</span>
+          </button>
+          <div class="filter__container">
+            <h2 class="filter__title">Фильтровать</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <a class="filter__link" href="interior-doors.html">Межкомнатные двери</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link filter__link--current">Мебель</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Стеновые панели «Буазери»</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Лестницы</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Мебельные фасады</a>
+              </li>
+            </ul>
+            <!--=include form-furniture.html -->
+          </div>
+        </div>
+        <div class="interior-product__door-pagination">
+        <!--=include furniture-product.html -->
+        <!--=include pagination.html -->
+        <section class="order">
+          <h2 class="order__title">Мебель на заказ</h2>
+          <p class="order__description">Мы предлагаем самый актуальный ассортимент на сегодня и предоставляем клиентам все возможности быть уверенными в покупке. Приглашаем посетить фирменные шоу-румы и лично оценить качество используемых тканей и материалов, проверить комфортность наполнения и работы механизмов, убедиться в удобстве и надежности нашей мебели!</p>
+          <p class="order__description">Изготавливаются они следующим образом: создаётся каркас из недорогой древесины, который затем обшивается панелями МДФ. Панели ламинируются плёнкой любых оттенков. Шпонированные варианты представляют собой целостный натуральный массив из дерева, покрытый шпоном из МДФ. Классические массивные и глухие модели, и лёгкие модели со стеклом, могут быть изготовлены из натурального дерева.</p>
+          <p class="order__description">Если Вам необходима модель с эксклюзивным дизайном, можно сделать её по специальному проекту. Независимо тот того, в какой ценовой категории будут находиться выбранные вами изделия, все они выполнены из качественного материала, надёжны и безопасны.</p>
+        </section>
+      </div>
+    </div>
+    </section>
+
+    <!--=include help.html -->
+  </div>
+</main>
+
+
+
+<!--=include footer.html -->

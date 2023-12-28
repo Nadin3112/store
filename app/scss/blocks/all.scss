@@ -1,0 +1,30 @@
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  padding: 10px 20px;
+  color: $color-main;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid $color-decoration;
+
+  @media (min-width: $tablet-width) {
+    min-height: 60px;
+    font-size: 15px;
+  }
+
+  &:hover {
+    color: $color-link;
+  }
+
+  &:active {
+    color: rgba(177, 65, 1, 0.5);
+  }
+}
+

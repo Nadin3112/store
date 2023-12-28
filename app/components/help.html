@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<article class="help">
+  <picture>
+    <source type="image/avif" media="(min-width: 768px)" srcset="images/content/help-desktop@1x.avif 1x, help-desktop@2x.avif 2x">
+    <source type="image/avif" srcset="images/content/help-mobile@1x.avif 1x, help-mobile@2x.avif 2x">
+    <source type="image/webp" media="(min-width: 768px)" srcset="images/content/help-desktop@1x.webp 1x, help-desktop@2x.webp 2x">
+    <source type="image/webp" srcset="images/content/help-mobile@1x.webp 1x, help-mobile@2x.webp 2x">
+    <source media="(min-width: 768px)" srcset="images/content/help-desktop@1x.png 1x, help-desktop@2x.png 2x">
+    <img class="help__image" src="images/content/help-mobile@1x.png" srcset="images/content/help-mobile@2x.png 2x" alt="Дверь в интерьере" width="350" height="200">
+  </picture>
+  <div class="help__container">
+    <h2 class="help__title">Нужна помощь с&nbsp;выбором?</h2>
+    <p class="help__description">Наши специалисты с радостью помогут&nbsp;Вам, оставьте свой номер телефона!</p>
+    <form class="help__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <div class="help__wrapper">
+        <label class="visually-hidden" for="name">Ваше имя</label>
+        <input class="help__input" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+        <label class="visually-hidden" for="tel">Ваш телефон</label>
+        <input class="help__input" type="tel" name="tel" id="tel" placeholder="Ваш телефон" required>
+      </div>
+        <button class="help__button button" type="submit">Связаться с нами</button>
+    </form>
+  </div>
+</article>
